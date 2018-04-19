@@ -1,0 +1,255 @@
+/* Overwrite */
+.container
+{
+    max-width: 100%;
+}
+/****************************** Index ******************************/
+@media screen and (min-width: 760px)
+{
+    .index-thi h1
+    {
+        font-size: 46px;
+    }
+}
+/****************************** Others / Rest ******************************/
+#internal .header
+{
+    background: #223a69;
+    background: -webkit-linear-gradient(#223a69, #465d86);
+    background: -o-linear-gradient(#223a69, #465d86);
+    background: -moz-linear-gradient(#223a69, #465d86);
+    background: linear-gradient(#223a69, #465d86);
+}
+.green
+{
+    background: #04be47;
+}
+.inset
+{
+    background-color: transparent;
+    border: 2px solid #04be47;
+    color: #04be47;
+}
+.half > .ctas .cta
+{
+    padding: 19px 26px;
+}
+.cta
+{
+    border-radius: 8px;
+}
+.cta > .fa
+{
+    padding-left: 7px;
+}
+.cta.orange
+{
+    background: #ff7011;
+    color: #fff;
+}
+.cta.orange:hover
+{
+    background: #5b73a3;
+}
+#returns .resp-tabs-list li span
+{
+    font-size: 12px;
+    font-family: 'robotolight';
+    display: block;
+    color: #ffffff;
+    font-weight: 400;
+}
+.fx-interview > .content > h2 > span,
+.fx-statistics > .content > h2 > span
+{
+    border-bottom: 2px solid #04be7f;
+    padding-bottom: 2px;
+    line-height: 42px;
+}
+.info .form-header h2
+{
+    padding: 10px 0 5px 80px
+}
+.info .form-header h2 > span
+{
+    font-size: 12px;
+    font-weight: 600;
+    color: #ff7f24;
+    line-height: 12px;
+}
+.contact .input-field.txt
+{
+    padding: 12px 20px 12px 45px;
+}
+.contact .input-field.txt > img
+{
+    top: 5px;
+}
+.contact .input-form img
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.contact .input-form .ui-selectmenu-button span.ui-selectmenu-text
+{
+    font-size: 15px;
+    padding: 0;
+}
+.contact .input-form
+{
+    margin-bottom: 18px;
+    border: 1px solid #d6dce8;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(251,251,253,1);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(251,251,253,1);
+    box-shadow: 0px 0px 0px 1px rgba(251,251,253,1);
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+    padding: 16px 20px 2px 45px;
+    width: 100%;
+}
+.contact .input-form select
+{
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    color: #949ca3;
+    font-size: 15px;
+    font-family: 'robotolight';
+}
+
+/****************************** CTA Arrow ******************************/
+@media all and (max-width: 1199px)
+{
+    .div-cta-helper
+    {
+        display: none;
+    }
+}
+@media all and (min-width: 1200px)
+{
+    .div-cta-helper
+    {
+        position: relative;
+    }
+    .div-cta-arrow
+    {
+        position: absolute;
+        top: 2px;
+        left: -60px;
+    }
+}
+/****************************** Strategies ******************************/
+.fvs
+{
+    background-image:url('/res/img/headers/fxviper-banner-bg.jpg');
+}
+.stats-disclaimer
+{
+    text-align: left;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 24px;
+    color: #506471;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+.fx-interview
+{
+    padding-top: 60px;
+}
+.fx-interview h2
+{
+    text-align: center;
+    padding-bottom: 0;
+}
+.fx-interview p
+{
+    font-size: 18px;
+    padding-right: 25px;
+    line-height: 28px;
+}
+.fx-interview .row .half
+{
+    padding: 0;
+}
+.fx-interview > .content
+{
+    padding: 0 20px !important;
+}
+/****************************** info form ******************************/
+.half .info-form
+{
+    margin: 0 auto;
+    display: block;
+    max-width: 390px;
+}
+.info-form
+{
+    text-align: left;
+    border: 2px solid #f5f6f8;
+    border-top: 3px solid #f5f6f8;
+    border-bottom: 3px solid #f5f6f8;
+    max-width: 375px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 30px;
+}
+.info-form button
+{
+    width: 100%;
+    margin-bottom: 18px;
+}
+.info-form form
+{
+    text-align: center;
+}
+.info-form-bottom
+{
+    background: #eef1f7;
+    border-left: 1px solid #f5f6f8;
+    border-right: 1px solid #f5f6f8;
+    padding: 22px;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(255,255,255,1);
+    box-shadow: 0px 0px 0px 1px rgba(255,255,255,1);
+    text-align: center;
+}
+.info-form-bottom .input-field
+{
+    margin-bottom: 18px;
+}
+/****************************** Custom ******************************/
+.red-stats
+{
+    color: #f4272b !important;
+}
+.thi-blue-color
+{
+    color: #5B73A3 !important;
+}
+.dotted-link
+{
+    text-decoration:none;
+    border-bottom:1px dotted;
+}
+.dotted-link:hover
+{
+    text-decoration:none;
+    border-bottom:1px solid;
+}
+.center
+{
+    text-align: center;
+}
+.hidden
+{
+    display:none!important;
+    visibility:hidden!important
+}
