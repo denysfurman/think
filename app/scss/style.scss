@@ -467,15 +467,7 @@ input[type="submit"] {
     height: 1%;
   }
 }
-select {
-  appearance: none;
-  display: block !important;
-  height: 0;
-  margin-top: 0;
-  isibility: hidden;
-  width: 0;
-  border: none;
-}
+
 input {
   appearance: none;
   &:-moz-placeholder {
@@ -3194,5 +3186,247 @@ button.cta {
 
 #wrapper{
   padding: 0;
+}
+/* Responsive
+-----------------------------------------------------------------*/
+/* medium+ screen sizes */
+@media (min-width: 1200px) {
+  .mobile-only {
+    display: none !important;
+  }
+  .desktop-only {
+    display: block !important;
+  }
+}
+
+/* small screen sizes */
+@media (max-width: 1199px) {
+  .mobile-only {
+    display: block !important;
+  }
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+/* Signature
+-----------------------------------------------------------------*/
+
+.sigNav .clearButton a, .drawItDesc {
+  color: #0A246A !important;
+}
+
+/* Agreement
+-----------------------------------------------------------------*/
+
+#mda-signature-scroll:hover {
+  cursor: pointer;
+}
+
+/* Custom
+-----------------------------------------------------------------*/
+
+.application-ul li {
+  margin-left: 0.5em;
+  i {
+    color: #5B73A3 !important;
+    margin-right: 0.2em;
+  }
+}
+
+/* Application Forms
+-----------------------------------------------------------------*/
+
+.application-white-box {
+  background-color: #fff;
+  padding: 55px 30px 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #ebecee;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  h5 {
+    text-align: left;
+    font-size: 20px;
+    line-height: normal;
+    color: #1f394d;
+    padding: 0 0 25px;
+  }
+  h3 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    font-size: 22px;
+  }
+  &.btmbox {
+    margin-bottom: 0 !important;
+    padding: 40px 10%;
+    position: relative;
+    z-index: 50;
+  }
+  &.inputs {
+    margin-bottom: 0 !important;
+    padding: 20px;
+    position: relative;
+    z-index: 50;
+  }
+}
+
+.application-steps-current {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+.c-full-left {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 75px;
+  h1 {
+    width: 100%;
+  }
+}
+
+.app-forms {
+  input {
+    &::-webkit-input-placeholder {
+      color: #a6b3b2;
+    }
+    &:-moz-placeholder, &::-moz-placeholder {
+      color: #a6b3b2;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      color: #a6b3b2;
+    }
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    color: #000;
+    font-size: 1.1em;
+    font-family: 'robotolight';
+  }
+  border: 1px solid #d6dce8;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(251, 251, 253, 1);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(251, 251, 253, 1);
+  box-shadow: 0px 0px 0px 1px rgba(251, 251, 253, 1);
+  background: #fff;
+  position: relative;
+  box-sizing: border-box;
+  padding: 18px 30px 18px 18px;
+  margin-bottom: 18px;
+}
+
+.app-select {
+  border: 1px solid #d6dce8;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(251, 251, 253, 1);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(251, 251, 253, 1);
+  box-shadow: 0px 0px 0px 1px rgba(251, 251, 253, 1);
+  background: #fff;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 18px;
+  select {
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    margin-right: 20px;
+  }
+}
+
+/* Select2 Forms
+-----------------------------------------------------------------*/
+
+.select2-container {
+  font-size: 1.1em;
+  padding: 18px 30px 18px 18px;
+}
+
+.select2-container--default .select2-selection--single {
+  border: 0;
+  .select2-selection__arrow {
+    left: auto;
+    margin-top: 0px;
+    position: absolute;
+    right: 0px;
+    top: 4px;
+    background: url('/images/span-select.png') no-repeat right top;
+    width: 26px;
+    height: 33px;
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+  }
+}
+
+/* Noty button
+-----------------------------------------------------------------*/
+
+.btn-noty {
+  cursor: pointer;
+  color: #fff;
+  background: #be3543;
+  border: none;
+  display: inline-block;
+  padding: 19px 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'robotoblack';
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  line-height: 18px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  transition: background-color 0.3s ease;
+  vertical-align: top;
+}
+
+/* Upload
+-----------------------------------------------------------------*/
+
+.btn-noty-uploaded, .plupload_button {
+  cursor: pointer;
+  color: #fff;
+  background: #04be7f;
+  border: none;
+  display: inline-block;
+  padding: 19px 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'robotoblack';
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  line-height: 18px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  transition: background-color 0.3s ease;
+  vertical-align: top;
+}
+
+.plupload_add:before {
+  padding-right: 6px;
+  font-family: FontAwesome;
+  content: "\f0a9";
+}
+
+.plupload_start:before {
+  padding-right: 6px;
+  font-family: FontAwesome;
+  content: "\f0ee";
+}
+
+.plupload_disabled, a.plupload_disabled:hover {
+  background: #a6b3b2;
+  color: #fff;
+}
+
+.plupload_filelist_footer {
+  height: 55px !important;
 }
 @import "media"; // Always at the end

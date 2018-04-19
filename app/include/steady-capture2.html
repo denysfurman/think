@@ -1,0 +1,675 @@
+//= components/head.html
+
+<body id="internal">
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PP4QP7" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe>
+</noscript>
+<div id="menu-helper"></div>
+<!--Container start-->
+<div class="container" id="wrapper">
+	<div class="top-wrapper">
+		<div class="header">
+			<div class='content clearfix'><a href='/' class='logo'>
+				<script data-pagespeed-no-defer>//<![CDATA[
+                (function () {
+                    for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function (b, c, a) {
+                        if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters.");
+                        b != Array.prototype && b != Object.prototype && (b[c] = a.value)
+                    }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) {
+                        var m = k[l];
+                        m in h || (h[m] = {});
+                        h = h[m]
+                    }
+                    var n = k[k.length - 1], p = h[n], q = p ? p : function (b) {
+                        var c;
+                        if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");
+                        c = this + "";
+                        if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value");
+                        b |= 0;
+                        for (var a = ""; b;) if (b & 1 && (a += c), b >>>= 1) c += c;
+                        return a
+                    };
+                    q != p && null != q && g(h, n, {configurable: !0, writable: !0, value: q});
+                    var t = this;
+
+                    function u(b, c) {
+                        var a = b.split("."), d = t;
+                        a[0] in d || !d.execScript || d.execScript("var " + a[0]);
+                        for (var e; a.length && (e = a.shift());) a.length || void 0 === c ? d[e] ? d = d[e] : d = d[e] = {} : d[e] = c
+                    };
+
+                    function v(b) {
+                        var c = b.length;
+                        if (0 < c) {
+                            for (var a = Array(c), d = 0; d < c; d++) a[d] = b[d];
+                            return a
+                        }
+                        return []
+                    };
+
+                    function w(b) {
+                        var c = window;
+                        if (c.addEventListener) c.addEventListener("load", b, !1); else if (c.attachEvent) c.attachEvent("onload", b); else {
+                            var a = c.onload;
+                            c.onload = function () {
+                                b.call(this);
+                                a && a.call(this)
+                            }
+                        }
+                    };var x;
+
+                    function y(b, c, a, d, e) {
+                        this.h = b;
+                        this.j = c;
+                        this.l = a;
+                        this.f = e;
+                        this.g = {
+                            height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
+                            width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+                        };
+                        this.i = d;
+                        this.b = {};
+                        this.a = [];
+                        this.c = {}
+                    }
+
+                    function z(b, c) {
+                        var a, d, e = c.getAttribute("data-pagespeed-url-hash");
+                        if (a = e && !(e in b.c)) if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1; else {
+                            d = c.getBoundingClientRect();
+                            var f = document.body;
+                            a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop);
+                            d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft);
+                            f = a.toString() + "," + d;
+                            b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height && d <= b.g.width)
+                        }
+                        a && (b.a.push(e), b.c[e] = !0)
+                    }
+
+                    y.prototype.checkImageForCriticality = function (b) {
+                        b.getBoundingClientRect && z(this, b)
+                    };
+                    u("pagespeed.CriticalImages.checkImageForCriticality", function (b) {
+                        x.checkImageForCriticality(b)
+                    });
+                    u("pagespeed.CriticalImages.checkCriticalImages", function () {
+                        A(x)
+                    });
+
+                    function A(b) {
+                        b.b = {};
+                        for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d) a = a.concat(v(document.getElementsByTagName(c[d])));
+                        if (a.length && a[0].getBoundingClientRect) {
+                            for (d = 0; c = a[d]; ++d) z(b, c);
+                            a = "oh=" + b.l;
+                            b.f && (a += "&n=" + b.f);
+                            if (c = !!b.a.length) for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) {
+                                var e = "," + encodeURIComponent(b.a[d]);
+                                131072 >= a.length + e.length && (a += e)
+                            }
+                            b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a.length + e.length && (a += e), c = !0);
+                            C = a;
+                            if (c) {
+                                d = b.h;
+                                b = b.j;
+                                var f;
+                                if (window.XMLHttpRequest) f = new XMLHttpRequest; else if (window.ActiveXObject) try {
+                                    f = new ActiveXObject("Msxml2.XMLHTTP")
+                                } catch (r) {
+                                    try {
+                                        f = new ActiveXObject("Microsoft.XMLHTTP")
+                                    } catch (D) {
+                                    }
+                                }
+                                f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a))
+                            }
+                        }
+                    }
+
+                    function B() {
+                        var b = {}, c;
+                        c = document.getElementsByTagName("IMG");
+                        if (!c.length) return {};
+                        var a = c[0];
+                        if (!("naturalWidth" in a && "naturalHeight" in a)) return {};
+                        for (var d = 0; a = c[d]; ++d) {
+                            var e = a.getAttribute("data-pagespeed-url-hash");
+                            e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight || e in b && a.width >= b[e].o && a.height >= b[e].m) && (b[e] = {
+                                rw: a.width,
+                                rh: a.height,
+                                ow: a.naturalWidth,
+                                oh: a.naturalHeight
+                            })
+                        }
+                        return b
+                    }
+
+                    var C = "";
+                    u("pagespeed.CriticalImages.getBeaconData", function () {
+                        return C
+                    });
+                    u("pagespeed.CriticalImages.Run", function (b, c, a, d, e, f) {
+                        var r = new y(b, c, a, e, f);
+                        x = r;
+                        d && w(function () {
+                            window.setTimeout(function () {
+                                A(r)
+                            }, 0)
+                        })
+                    });
+                })();
+                pagespeed.CriticalImages.Run('/mod_pagespeed_beacon', '#', '-hy8FOWla2', true, false, 'NVKxTarh95E');
+                //]]></script>
+				<img src='../images/logo.png' data-pagespeed-url-hash="1180374562"
+					 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>
+				<div class='h-right clearfix'><a href="#" class='h-button apply'>Apply
+					Online</a>
+					<ul class='secondary clearfix'>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+					<div class='clear'></div>
+					<a id='menu_trigger' href='#mm_menu'><span class='slicknav_icon'><span
+							class='slicknav_icon-bar'></span><span class='slicknav_icon-bar'></span><span
+							class='slicknav_icon-bar'></span></span></a>
+					<nav id='mm_menu' class='clearfix'>
+						<div class='working'>
+							<ul class='menu' id='main_menu'>
+								<li><a href='/'>Home</a></li>
+								<li><a href="#">How It Works </a></li>
+								<li><a href="#">Who We Are</a>
+									<ul>
+										<li><a href="#">About Us</a></li>
+										<li><a href="#">Our team</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Our Strategies </a>
+									<ul>
+										<li><a href="#">Steady Capture MDA</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="banner ffs">
+			<div class="content clearfix">
+				<div class="c-left">
+					<h1 style="width: 80%;">
+						<img src="../images/headline-icon-fxviper-strategy.png"
+							data-pagespeed-url-hash="711534842"
+							onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>Steady Capture Strategy
+					</h1>
+					<p>Forex Managed Discretionary Account (<abbr title="Managed Discretionary Account">MDA</abbr>/<abbr
+							title="Multi-Account Manager">MAM</abbr>)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="content clearfix">
+			<div class="half equal right">
+				<div class="h-inner">
+					<a href="https://www.youtube.com/embed/bdmA_Dp64oI?autoplay=1&amp;theme=dark&amp;keyboard=1&amp;autohide=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3" class="fancybox-media fancybox.iframe fxvid">
+						<img src="../images/videoplaceholderwhite.jpg" data-pagespeed-url-hash="2625341816" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+					</a>
+				</div>
+			</div>
+			<div class="half equal text-left">
+				<h2>Steady Capture is controlled by a manual trader from Canada with over 10 years experience in
+					generating returns from the markets.</h2>
+				<p>He uses multiple time frames to identify high probability opportunities across all the major currency
+					pairs as well as Gold and Silver. A variety of strategies are used to capitalise on opportunities
+					from scalping trades that last a few seconds to swing trades targeting hundreds of pips that could
+					last as long as a week.</p>
+				<p>Since inception our clients have enjoyed above market returns across an array of market conditions.
+					This is due to Steady Captures unique ability to harness the an arsenal of proprietary filters and
+					tools to execute the right strategies for the volatility on offer.</p>
+				<p>As part of our mission to deliver industry-beating returns and aligning our interests with those of
+					our clients, we charge no set-up fees, no ongoing management fees and no exit fees. Clients only pay
+					a success fee on profits generated on their accounts and are free to withdraw their investment at
+					any time.</p>
+				<p>Want to find out more about our Steady Capture strategy? Click or tap on the buttons below or contact
+					us directly on <strong>(AUS) +61 2 8387 4187</strong> or <strong>(UK) +44 20 7193 4521</strong>.</p>
+				<div class="ctas">
+					<a class="cta green" href="#">Get a free INFORMATION PACK
+						<i class="fa fa-download" aria-hidden="true"></i></a>
+					<a class="view small" href="#">
+						<img src="../images/mag4.png" data-pagespeed-url-hash="3495119780" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+						<span>Apply Now Online</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="graph-wrap v2">
+		<div class="graph-inner"></div>
+		<div class="g-left pattern"></div>
+		<div class="g-right pattern"></div>
+		<div class="content clearfix">
+			<div class="our-blue our"><img src="../images/arg.jpg" class="arg" data-pagespeed-url-hash="2814235177" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+				<h5>Total Gross Growth</h5>
+				<div class="fifth equal">
+					<div class="f-inner">
+						<img src="../images/fifth-icon-6.png" data-pagespeed-url-hash="2865859175" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+						<p class="nb"><span>30.91<sup>%</sup></span></p>
+						<p class="mid"><span>Total Gross Growth<br>Since Inception</span></p>
+						<img src="../images/graphpin.png" class="pin"
+							 data-pagespeed-url-hash="1485046678"
+							 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+					</div>
+				</div>
+			</div>
+			<div class="our-beige our">
+				<h5>Steady Capture Investment Statistics</h5>
+				<div class="fifth equal">
+					<div class="f-inner"><img src="../images/fifth-icon-7.png" data-pagespeed-url-hash="3160359096" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+						<p class="nb"><span>2015<sup class='txt'>APR</sup></span></p>
+						<p class="mid"><span>Strategy<br>Inception Date</span></p>
+						<img src="../images/graphpin.png" class="pin" data-pagespeed-url-hash="1485046678" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+					</div>
+				</div>
+				<div class="fifth equal">
+					<div class="f-inner"><img src="../images/fifth-icon-8.png" data-pagespeed-url-hash="3454859017" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+						<p class="nb"><span>9.62<sup>%</sup></span></p>
+						<p class="mid"><span>Compounded Annual<br>Growth Rate (gross)</span></p>
+						<img src="../images/graphpin.png" class="pin"
+							 data-pagespeed-url-hash="1485046678"
+							 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></div>
+				</div>
+				<div class="fifth equal">
+					<div class="f-inner"><img src="../images/fifth-icon-9.png" data-pagespeed-url-hash="3749358938" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+						<p class="nb"><span>22.44<sup>%</sup></span></p>
+						<p class="mid"><span>Maximum Historic <br>Drawdown</span></p>
+						<img src="../images/graphpin.png" class="pin"
+							 data-pagespeed-url-hash="1485046678"
+							 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row fx-interview">
+		<div class="content clearfix">
+			<h2><span>Interviewed: The Trader Managing Your Money</span></h2>
+			<div class="half equal right">
+				<iframe width="100%" height="166" scrolling="no" frameborder="no"
+						src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/323024955&amp;color=04be7f&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+			</div>
+			<div class="half equal text-left">
+				<p>Hear directly from the man who will be managing your money. Learn about his journey and what was
+					required for him to achieve such success with his trading.</p>
+			</div>
+		</div>
+	</div>
+	<div class="fx-statistics">
+		<div class="content clearfix">
+			<h2><span>Steady Capture Cumulative Gross Returns</span></h2>
+			<p>based on Balance of Showcase Account</p>
+			<div>
+				<div id="chartContainer2" style="min-width: 250px; height: 400px; margin: 0 auto 3em auto;"></div>
+			</div>
+			<script type="text/javascript">var minGraph = -5;
+            var netReturn = [{x: Date.UTC(2015, 2, 1), y: 0}, {
+                x: Date.UTC(2015, 3, 1),
+                y: 4.03
+            }, {x: Date.UTC(2015, 4, 1), y: 7.72}, {x: Date.UTC(2015, 5, 1), y: 8.9}, {
+                x: Date.UTC(2015, 6, 1),
+                y: -2.43
+            }, {x: Date.UTC(2015, 7, 1), y: -0.12}, {x: Date.UTC(2015, 8, 1), y: 1.93}, {
+                x: Date.UTC(2015, 9, 1),
+                y: 7.55
+            }, {x: Date.UTC(2015, 10, 1), y: 9.23}, {x: Date.UTC(2015, 11, 1), y: 11.23}, {
+                x: Date.UTC(2016, 0, 1),
+                y: 14.57
+            }, {x: Date.UTC(2016, 1, 1), y: 18.22}, {x: Date.UTC(2016, 2, 1), y: 21.6}, {
+                x: Date.UTC(2016, 3, 1),
+                y: 19.83
+            }, {x: Date.UTC(2016, 4, 1), y: 22.79}, {x: Date.UTC(2016, 5, 1), y: 23.22}, {
+                x: Date.UTC(2016, 6, 1),
+                y: 24.69
+            }, {x: Date.UTC(2016, 7, 1), y: 26.05}, {x: Date.UTC(2016, 8, 1), y: 26.4}, {
+                x: Date.UTC(2016, 9, 1),
+                y: 29.33
+            }, {x: Date.UTC(2016, 10, 1), y: 31.46}, {x: Date.UTC(2016, 11, 1), y: 34.56}, {
+                x: Date.UTC(2017, 0, 1),
+                y: 35.85
+            }, {x: Date.UTC(2017, 1, 1), y: 36.15}, {x: Date.UTC(2017, 2, 1), y: 37.61}, {
+                x: Date.UTC(2017, 3, 1),
+                y: 40.56
+            }, {x: Date.UTC(2017, 4, 1), y: 41.66}, {x: Date.UTC(2017, 5, 1), y: 42.79}, {
+                x: Date.UTC(2017, 6, 1),
+                y: 43.96
+            }, {x: Date.UTC(2017, 7, 1), y: 44.45}, {x: Date.UTC(2017, 8, 1), y: 46.29}, {
+                x: Date.UTC(2017, 9, 1),
+                y: 49.3
+            }, {x: Date.UTC(2017, 10, 1), y: 51.32}, {x: Date.UTC(2017, 11, 1), y: 51.3}, {
+                x: Date.UTC(2018, 0, 1),
+                y: 53.68
+            }, {x: Date.UTC(2018, 1, 1), y: 40.54}, {x: Date.UTC(2018, 2, 1), y: 30.91},];
+            var monthlyGain = [{x: Date.UTC(2015, 3, 1), y: 4.03}, {
+                x: Date.UTC(2015, 4, 1),
+                y: 3.55
+            }, {x: Date.UTC(2015, 5, 1), y: 1.09}, {x: Date.UTC(2015, 6, 1), y: -10.4}, {
+                x: Date.UTC(2015, 7, 1),
+                y: 2.37
+            }, {x: Date.UTC(2015, 8, 1), y: 2.05}, {x: Date.UTC(2015, 9, 1), y: 5.51}, {
+                x: Date.UTC(2015, 10, 1),
+                y: 1.56
+            }, {x: Date.UTC(2015, 11, 1), y: 1.83}, {x: Date.UTC(2016, 0, 1), y: 3.01}, {
+                x: Date.UTC(2016, 1, 1),
+                y: 3.18
+            }, {x: Date.UTC(2016, 2, 1), y: 2.86}, {x: Date.UTC(2016, 3, 1), y: -1.45}, {
+                x: Date.UTC(2016, 4, 1),
+                y: 2.47
+            }, {x: Date.UTC(2016, 5, 1), y: 0.35}, {x: Date.UTC(2016, 6, 1), y: 1.19}, {
+                x: Date.UTC(2016, 7, 1),
+                y: 1.09
+            }, {x: Date.UTC(2016, 8, 1), y: 0.28}, {x: Date.UTC(2016, 9, 1), y: 2.32}, {
+                x: Date.UTC(2016, 10, 1),
+                y: 1.64
+            }, {x: Date.UTC(2016, 11, 1), y: 2.36}, {x: Date.UTC(2017, 0, 1), y: 0.96}, {
+                x: Date.UTC(2017, 1, 1),
+                y: 0.22
+            }, {x: Date.UTC(2017, 2, 1), y: 1.07}, {x: Date.UTC(2017, 3, 1), y: 2.15}, {
+                x: Date.UTC(2017, 4, 1),
+                y: 0.78
+            }, {x: Date.UTC(2017, 5, 1), y: 0.8}, {x: Date.UTC(2017, 6, 1), y: 0.82}, {
+                x: Date.UTC(2017, 7, 1),
+                y: 0.34
+            }, {x: Date.UTC(2017, 8, 1), y: 1.27}, {x: Date.UTC(2017, 9, 1), y: 2.06}, {
+                x: Date.UTC(2017, 10, 1),
+                y: 1.35
+            }, {x: Date.UTC(2017, 11, 1), y: -0.01}, {x: Date.UTC(2018, 0, 1), y: 1.57}, {
+                x: Date.UTC(2018, 1, 1),
+                y: -8.55
+            }, {x: Date.UTC(2018, 2, 1), y: -6.85},];</script>
+			<h2><span>Monthly Gross Returns By Year</span></h2>
+			<p>based on Balance of Showcase Account</p>
+			<div id="returns">
+				<ul class="resp-tabs-list hor_1">
+					<li>2018<span>Gross returns: -13.47%</span></li>
+					<li>2017<span>Gross returns: 12.43%</span></li>
+					<li>2016<span>Gross returns: 20.99%</span></li>
+					<li>2015<span>Gross returns: 11.23%</span></li>
+				</ul>
+				<div class="resp-tabs-container hor_1">
+					<div class="datagrid2">
+						<table style="table-layout: fixed;">
+							<thead>
+							<tr>
+								<th>Jan</th>
+								<th>Feb</th>
+								<th>Mar</th>
+								<th>Apr</th>
+								<th>May</th>
+								<th>Jun</th>
+								<th>Jul</th>
+								<th>Aug</th>
+								<th>Sep</th>
+								<th>Oct</th>
+								<th>Nov</th>
+								<th>Dec</th>
+								<th><strong>total</strong></th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>1.57%</span></td>
+								<td><span class='red-stats'>-8.55%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='red-stats'>-6.85%</span></td>
+								<td>-</td>
+								<td style='background-color:#fbfbfb;'>-</td>
+								<td>-</td>
+								<td style='background-color:#fbfbfb;'>-</td>
+								<td>-</td>
+								<td style='background-color:#fbfbfb;'>-</td>
+								<td>-</td>
+								<td style='background-color:#fbfbfb;'>-</td>
+								<td>-</td>
+								<td style="background-color:#fbfbfb;"><strong><span
+										class="red-stats">-13.47%</span></strong></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="datagrid2">
+						<table style="table-layout: fixed;">
+							<thead>
+							<tr>
+								<th>Jan</th>
+								<th>Feb</th>
+								<th>Mar</th>
+								<th>Apr</th>
+								<th>May</th>
+								<th>Jun</th>
+								<th>Jul</th>
+								<th>Aug</th>
+								<th>Sep</th>
+								<th>Oct</th>
+								<th>Nov</th>
+								<th>Dec</th>
+								<th><strong>total</strong></th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>0.96%</span></td>
+								<td><span class='green-stats'>0.22%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>1.07%</span></td>
+								<td><span class='green-stats'>2.15%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>0.78%</span></td>
+								<td><span class='green-stats'>0.8%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>0.82%</span></td>
+								<td><span class='green-stats'>0.34%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>1.27%</span></td>
+								<td><span class='green-stats'>2.06%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>1.35%</span></td>
+								<td><span class='red-stats'>-0.01%</span></td>
+								<td style="background-color:#fbfbfb;"><strong><span
+										class="green-stats">12.43%</span></strong></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="datagrid2">
+						<table style="table-layout: fixed;">
+							<thead>
+							<tr>
+								<th>Jan</th>
+								<th>Feb</th>
+								<th>Mar</th>
+								<th>Apr</th>
+								<th>May</th>
+								<th>Jun</th>
+								<th>Jul</th>
+								<th>Aug</th>
+								<th>Sep</th>
+								<th>Oct</th>
+								<th>Nov</th>
+								<th>Dec</th>
+								<th><strong>total</strong></th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>3.01%</span></td>
+								<td><span class='green-stats'>3.18%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>2.86%</span></td>
+								<td><span class='red-stats'>-1.45%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>2.47%</span></td>
+								<td><span class='green-stats'>0.35%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>1.19%</span></td>
+								<td><span class='green-stats'>1.09%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>0.28%</span></td>
+								<td><span class='green-stats'>2.32%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>1.64%</span></td>
+								<td><span class='green-stats'>2.36%</span></td>
+								<td style="background-color:#fbfbfb;"><strong><span
+										class="green-stats">20.99%</span></strong></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="datagrid2">
+						<table style="table-layout: fixed;">
+							<thead>
+							<tr>
+								<th>Jan</th>
+								<th>Feb</th>
+								<th>Mar</th>
+								<th>Apr</th>
+								<th>May</th>
+								<th>Jun</th>
+								<th>Jul</th>
+								<th>Aug</th>
+								<th>Sep</th>
+								<th>Oct</th>
+								<th>Nov</th>
+								<th>Dec</th>
+								<th><strong>total</strong></th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td style='background-color:#fbfbfb;'>-</td>
+								<td>-</td>
+								<td style='background-color:#fbfbfb;'>-</td>
+								<td><span class='green-stats'>4.03%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>3.55%</span></td>
+								<td><span class='green-stats'>1.09%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='red-stats'>-10.4%</span></td>
+								<td><span class='green-stats'>2.37%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>2.05%</span></td>
+								<td><span class='green-stats'>5.51%</span></td>
+								<td style='background-color:#fbfbfb;'><span class='green-stats'>1.56%</span></td>
+								<td><span class='green-stats'>1.83%</span></td>
+								<td style="background-color:#fbfbfb;"><strong><span
+										class="green-stats">11.23%</span></strong></td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<p class="stats-disclaimer">
+				All return figures are before performance fee and are based on balance instead of equity (i.e. does not
+				take into account open positions). The return on your account may different due to factors including but
+				not limited to position size and account start date. All securities and financial products or
+				instruments transactions involve risks. Please remember that the past performance results are not
+				necessarily indicative of future results. Trading derivatives carries a high level of risk to your
+				capital and you should only trade with money you can afford to lose. Trading derivatives may not be
+				suitable for all investors, so please ensure that you fully understand the risks involved, and seek
+				independent advice if necessary.
+			</p>
+			<div class="live"><p>Live results verified by Myfxbook - <a
+					a href="#">Download Info Pack Now (Myfxbook links inside)</a>
+			</p></div>
+			<h2><span>Monthly Gross Returns</span></h2>
+			<div>
+				<div id="chartContainerMonthly2"
+					 style="min-width: 250px; height: 300px; margin: 0 auto; margin-bottom: 1em;"></div>
+			</div>
+			<div class="white-box grey">
+				<h5>Ready To Get Started? Contact us directly on <strong>(AUS) +61 2 8387 4187</strong> or <strong>(UK)
+					+44 20 7193 4521</strong> or click on the buttons below to get your information pack or apply now
+					online </h5>
+				<div class="ctas">
+					<a class="green cta" href="#">Get a free INFORMATION PACK <i
+							class="fa fa-download" aria-hidden="true"></i></a>
+					<a class="green inset cta" href="#">Apply Now Online</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="why">
+		<div class="content clearfix">
+			<h2>Why <br/>Think Huge<br/> Investments</h2>
+			<div class="why-boxes-wrapper">
+				<div class="w-box equal">
+					<img src="../images/white-icon-1.png"
+						 data-pagespeed-url-hash="800173436"
+						 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+					<p><strong>ASIC Regulated</strong></p>
+					<p>Our Managed Discretionary Accounts is regulated by the Australian Securities and Investment
+						Commission.</p>
+				</div>
+				<div class="w-box equal">
+					<img src="../images/white-icon-3.png"
+						 data-pagespeed-url-hash="1389173278"
+						 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+					<p><strong>Segregated Client Funds</strong></p>
+					<p>All client funds are held in trust under the clients name at one of Australia's largest banks,
+						National Australia Bank.</p>
+				</div>
+				<div class="w-box equal">
+					<img src="../images/white-icon-2.png"
+						 data-pagespeed-url-hash="1094673357"
+						 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+					<p><strong>We're Real People</strong></p>
+					<p>We're real people. We have staff located in both Sydney and London who are available on the
+						phone, email or live chat 24hrs per day. We support all English, Spanish, Mandarin and Polish
+						speaking clients.</p>
+				</div>
+				<div class="w-box equal">
+					<img src="../images/white-icon-4.png"
+						 data-pagespeed-url-hash="1683673199"
+						 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+					<p><strong>Complete Transparency</strong></p>
+					<p>The performance of all our traders are tracked and monitored in real-time and all results
+						verified by Myfxbook.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="testimonials">
+		<div class="content">
+			<h2>Read What Our Clients Are Saying About Us</h2>
+			<div id="testimonials" class="thi-testimonials">
+				<div class="a-slide">
+					<div class="half">
+						<p class="quote">I have been a client of Nick from Think Huge for more than 18 months and I have
+							been extremely impressed by the customer service that Nick and his organisation have
+							delivered. I have a number of accounts with Nick and his traders and have more than doubled
+							investment and have recommend Nick and Think Huge to a number of friends and now they are
+							financially benefiting from his service as well.</p>
+						<p class="author">Mark Lewis</p>
+					</div>
+					<div class="half right">
+						<p class="quote">These guys deliver on their product, and consistently produce results that you
+							would expect from an investment, with the guarantee that if they don’t make you money, they
+							don’t get paid. I challenge you to find another investment company in this industry circle
+							who will offer you both the consistent gains and a “no gain no fee” payment scheme. The
+							pressure is all on them to perform.</p>
+						<p class="author">Peter Corica</p>
+					</div>
+				</div>
+				<div class="a-slide">
+					<div class="half">
+						<p class="quote">I truly appreciate the excellent support from Nick and his team at Think Huge.
+							I joined the site in August 2012 and have never looked back. I am glad to see stable growth
+							in my investment portfolio here over the last few years. A big thank you!</p>
+						<p class="author">Grace N.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="green-band">
+		<div class="content clearfix">
+			<h2><span>Want to find out what our FX Strategies can do for your investment portfolio?</span></h2>
+			<div class="ctas">
+				<a href="#" class="orange cta">Get a free INFORMATION PACK <i
+						class="fa fa-download" aria-hidden="true"></i></a>
+				<div class="c-info">
+					<p>Or contact us directly on:</p>
+					<a href="tel:+61283874187">(AUS) +61 2 8387 4187</a>
+					<a href="tel:+4402080502018 ">(UK) +44 020 8050 2018</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	//= components/footer.html
