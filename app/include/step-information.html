@@ -8,44 +8,7 @@
 <!--Container start-->
 <div class="container" id="wrapper">
 	<div class="top-wrapper">
-		<div class="header">
-			<div class='content clearfix'><a href='/' class='logo'>
-
-				<img src='../images/logo.png' data-pagespeed-url-hash="1180374562"
-					 onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>
-				<div class='h-right clearfix'><a href='#' class='h-button apply'>Apply
-					Online</a>
-					<ul class='secondary clearfix'>
-						<li><a href="#">FAQ</a></li>
-					</ul>
-					<div class='clear'></div>
-					<a id='menu_trigger' href='#mm_menu'><span class='slicknav_icon'><span
-							class='slicknav_icon-bar'></span><span class='slicknav_icon-bar'></span><span
-							class='slicknav_icon-bar'></span></span></a>
-					<nav id='mm_menu' class='clearfix'>
-						<div class='working'>
-							<ul class='menu' id='main_menu'>
-								<li><a href='/'>Home</a></li>
-								<li><a href="#">How It Works </a></li>
-								<li><a href="#">Who We Are</a>
-									<ul>
-										<li><a href="#">About Us</a></li>
-										<li><a href="#">Our team</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Our Strategies </a>
-									<ul>
-										<li><a href="#">Steady
-											Capture MDA</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Contact Us</a></li>
-							</ul>
-						</div>
-					</nav>
-				</div>
-			</div>
-		</div>
+		//= components/header.html
 		<div class="banner apo">
 			<div class="content clearfix">
 				<div class="c-full-left"><h1><img
@@ -68,13 +31,13 @@
 			<p>Mandatory fields are marked using asterisk *</p>
 			<div class="application-white-box inputs">
 				<form action="/" method="post">
-					<div class='app-select'><select name='client_title' class='select' required>
+					<select name='client_title' required>
 						<option value='' selected='selected' class='selected'>Title*</option>
 						<option value='Mr'>Mr</option>
 						<option value='Mrs'>Mrs</option>
 						<option value='Ms'>Ms</option>
 						<option value='Miss'>Miss</option>
-					</select></div>
+					</select>
 					<div class='app-forms'><input type='text' placeholder='First Name*' title='First Name - Required'
 												  pattern='.{2,}' title='2 characters minimum' maxlength='50'
 												  name='client_first_name' id='client_first_name' value='' required>
