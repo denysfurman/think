@@ -11,6 +11,10 @@
   .testimonials .half {
     padding: 40px 30px 0 59px;
   }
+  .green-band h2 span {
+    background: none;
+    padding: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -19,6 +23,9 @@
     align-content: center;
     align-items: center;
     padding: 0;
+  }
+  .testimonials .half {
+    padding: 34px 10px!important;
   }
 
 
@@ -33,5 +40,17 @@
   .testimonials .half.right {
     padding: 40px 46px 0 9px;
   }
+  #internal .row.step-wrap .content.content_step.content_step button.cta {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 22px 40px;
+    position: relative;
+    top: -3px;
+    margin-bottom: 20px;
+  }
+
+
+
 
 }
