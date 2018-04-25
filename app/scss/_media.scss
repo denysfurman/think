@@ -24,6 +24,11 @@
     align-items: center;
     padding: 0;
   }
+  .apply_form button.cta {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
   .testimonials .half {
     padding: 34px 10px!important;
   }
